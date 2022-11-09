@@ -1,0 +1,21 @@
+<h1>New wishlist Item</h1>
+<%= form_with model: @item do |form| %>
+  <div>
+    <%= form.label :item %><br>
+    <%= form.text_field :item %>
+  </div>
+
+  <div>
+    <%= form.label :link %><br>
+    <%= form.text_area :link %>
+  </div>
+
+  <div>
+    <%= form.label :cost %><br>
+    <%= form.text_area :cost %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
