@@ -7,7 +7,7 @@ RSpec.describe 'Item' do
     click_link('New Item')
 end
     it 'load page to create a new wishlist item' do
-        expect(page).to have_field('Wishlist Item')
+        expect(page).to have_field('Item')
         expect(page).to have_field('Link')
         expect(page).to have_field('Cost')
     end
